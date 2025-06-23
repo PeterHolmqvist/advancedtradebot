@@ -1,0 +1,33 @@
+
+{
+  "exchange": "bybit",
+  "mode": "grid",  
+  "pair": "SOL/USDT",
+  "capital_usd": 100,
+  "grid": {
+    "min_price": 130,
+    "max_price": 180,
+    "levels": 20
+  },
+  "trend": {
+    "fast_ema": 10,
+    "slow_ema": 30,
+    "trailing_stop_pct": 2.0
+  },
+  "volatility": {
+    "atr_window": 14,
+    "spacing_multiplier": 1.5
+  },
+  "telegram": {
+    "enabled": true,
+    "bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
+    "chat_id": "YOUR_CHAT_ID"
+  },
+  "risk": {
+    "max_open_trades": 5,
+    "stop_loss_pct": 5.0
+  },
+  "ml": {
+    "enabled": false
+  }
+}
